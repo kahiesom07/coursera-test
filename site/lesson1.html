@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>lesson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+      $(function() {
+      $("#box").click(function() {
+        let red = Math.floor((Math.random() * 255) + 0);
+        let green = Math.floor((Math.random() * 255) + 0);
+        let blue = Math.floor((Math.random() * 255) + 0);
+        let color = "rgb(" + red + "," + green + "," + blue + ")";
+        $("#box").css("background-color", color);
+
+      });
+    });
+   
+    $(document).ready(function(){
+      $('p').html("hello");
+    });
+      
+
+
+    </script>
+    <style>
+      #box{
+        border: 1px solid black;
+        height: 300px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+    <div id="output"></div>
+    <p >jnaslxnlajnxlan</p>
+    
+  </body>
+</html>
