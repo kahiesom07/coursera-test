@@ -3,58 +3,61 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Abdirizak Ali</title>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title></title>
 </head>
 
 <body>
-  <div class="top-container">
-    <img src="images/cloud.png" alt="cloud-img" class="top-cloud">
-    <h1>I'm Abdirizak.</h1>
-    <h2>A <span class="pro">pro</span>grammer.</h2>
-    <img src="images/cloud.png" alt="cloud-img" class="bottom-cloud">
-    <img src="images/mountain.png" alt="mountain-img">
-  </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img src="images\Abdirisaq.png" alt="my profile picture">
-      <h2>Hello.</h2>
-      <p class="intro">I am an web and mobile application developer student in udemy platform and i am very glad that i reach this level.</p>
+  <div class="container">
+    <div class="navbar">
+      <img src="images\logo.png" class="logo">
+      <nav>
+        <ul id="menulist">
+          <li><a href="#">Game Controllers</a></li>
+          <li><a href="#">VR Accessories</a></li>
+          <li><a href="#">Media Remotes</a></li>
+          <li><a href="#">Others</a></li>
+        </ul>
+      </nav>
+      <img src="images\menu.png" class="menu" onclick="togglemenu()">
     </div>
-    <hr class="hr-line">
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="database-img" src="https://media1.giphy.com/media/5E3YWzXIqhJ6Hgxboh/200w.webp?cid=ecf05e47jpwmpqof91gdyp8cehs1xiki0u44lhhbw2vw858a&rid=200w.webp&ct=s" alt="database-img">
-        <h3>Database Developer</h3>
-        <p >I started Learning oracle database in 2020 now i have oracle database sql and i just started to learn full stack developer to be backend and frontend developer to develope my future teaching online website.</p>
+    <div class="row">
+      <div class="col-1">
+        <h2>PS4 V2 <br> Dualshock 4</h2>
+        <h3>Wireless Controller For Playstation 4 </h3>
+        <p>(Compatible/Generic)</p>
+        <h4>$32.50</h4>
+        <button type="button">Buy Now <img src="images\arrow.png" alt=""></button>
       </div>
-      <div class="skill-row">
-        <img class="steak-img" src="https://media2.giphy.com/media/kaO76OkbvEVpI85daT/200w.webp?cid=ecf05e471500inw9u8pwkwuvakw0rg9vn5qmso6fxsum6cc5&rid=200w.webp&ct=s" alt="meat-img">
-        <h3>My favourite skill</h3>
-        <p >My favourite food actually is steak if i have steak that day is my day and alot of my people love steak from salt pea.</p>
+      <div class="col-2">
+        <img src="images\Controller.png" alt="Controller" class="Controller">
+        <div class="color-box"> </div>
+        <div class="add-btn">
+          <img src="images\add.png" alt="">
+          <p><small>Add To Cart</small></p>
+
+        </div>
       </div>
     </div>
-    <hr class="hr-line">
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>If you need to learn database from me or eat steak with me.</h3>
-      <p class="contact-me">Learn from the best if you are eaxpert i can learn from you because i am not prefect.</p>
-      <a href="mailto:deeraato@gmail.com" class="btn">CONTACT ME</a>
+    <div class="social-media">
+      <img src="images\fb.png">
+      <img src="images\tw.png">
+      <img src="images\ig.png">
+
     </div>
   </div>
+  <script>
+    var menuList = document.getElementById("menulist");
+    menuList.style.maxHeight = "0px";
 
-
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/abdirizak-kahie-a3611a16b/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/deeraato">Twitter</a>
-    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-    <p class="bottom-p">© 2022 Abdirizak Ali @kahiesom07.</p>
-  </div>
+    function togglemenu() {
+      if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "130px";
+      } else {
+        menuList.style.maxHeight = "0px";
+      }
+    }
+  </script>
 </body>
 
 </html>
